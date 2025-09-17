@@ -1,25 +1,28 @@
-// Reveal animations on scroll
-const reveals = document.querySelectorAll('.reveal, .card, .price-card');
-
-function revealOnScroll() {
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 120;
-
-    if (elementTop < windowHeight - revealPoint) {
-      reveals[i].style.opacity = 1;
-      reveals[i].style.transform = 'none';
+// Smooth scroll for navigation links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').slice(1);
+    const section = document.getElementById(targetId);
+    if (section) {
+      e.preventDefault();
+      section.scrollIntoView({ behavior: 'smooth' });
     }
-  }
-}
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
-// Simple form handling (demo, no backend)
-document.querySelector('form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thanks for contacting Hi-tech! We will get back to you soon.');
-  this.reset();
+  });
 });
+
+// Animate sections on scroll
+function animateOnScroll() {
+  const animatedSections = document.querySelectorAll('.animate__animated');
+  animatedSections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 60) {
+      section.classList.add('animate__fadeInUp');
+    }
+  });
+}
+window.addEventListener('scroll', animateOnScroll);
+
+// Add more subtle hero text animation on load
+window.onload = function() {
+  document.querySelector('.hero-content').classList.add('animate__fadeInDown');
+};
