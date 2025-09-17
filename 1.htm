@@ -1,119 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hi-tech | Affordable, Feature-rich Websites</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi-tech | Quality & Affordable Websites</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-logo">Hi-tech</div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-    <ul class="navbar-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+    <div class="logo">Hi-tech</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
-  <header class="hero" id="home">
-    <div class="hero-content">
-      <h1 class="animate-fade-in">Welcome to <span class="highlight">Hi-tech</span></h1>
-      <p class="subtitle animate-slide-up">
-        Affordable, stunning, and feature-rich websites for your business.
-      </p>
-      <a href="#contact" class="cta-btn animate-pop-in">Get Started</a>
-    </div>
-  </header>
   
-  <section class="about reveal" id="about">
-    <h2>About Us</h2>
-    <p>
-      Hi-tech delivers modern websites packed with features, at a price every business can afford. Our sites look amazing, load fast, and work perfectly on every device.
-    </p>
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content animate__animated animate__fadeInDown">
+      <h1>Build Your Perfect Website</h1>
+      <p>We create professional, modern, and affordable websites that stand out.<br>
+        Let Hi-tech take your business online with style and quality.</p>
+      <a href="#contact" class="cta-btn">Get Started</a>
+    </div>
   </section>
   
-  <section class="services reveal" id="services">
+  <section id="services" class="services-section animate__animated animate__fadeInUp">
     <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card animate-card">
-        <h3>Custom Design</h3>
-        <p>Unique, eye-catching layouts tailored to your brand.</p>
+    <div class="services-cards">
+      <div class="service-card">
+        <span class="service-icon">💻</span>
+        <h3>Quality Web Design</h3>
+        <p>Modern, responsive & visually appealing websites tailored for your brand.</p>
       </div>
-      <div class="card animate-card">
-        <h3>SEO Optimized</h3>
-        <p>Get found online with search-friendly sites.</p>
+      <div class="service-card">
+        <span class="service-icon">⚡</span>
+        <h3>Fast Delivery</h3>
+        <p>We deliver your website quickly so you can reach your audience sooner.</p>
       </div>
-      <div class="card animate-card">
-        <h3>Mobile Ready</h3>
-        <p>Perfect look and feel on phones, tablets, and desktops.</p>
+      <div class="service-card">
+        <span class="service-icon">💰</span>
+        <h3>Affordable Pricing</h3>
+        <p>Get the best value for your money—premium quality at competitive prices.</p>
       </div>
-      <div class="card animate-card">
-        <h3>Fast Hosting</h3>
-        <p>Lightning-fast, secure hosting included.</p>
+      <div class="service-card">
+        <span class="service-icon">🤝</span>
+        <h3>Client Support</h3>
+        <p>We're here to help you at every step. Your satisfaction is our priority.</p>
       </div>
     </div>
   </section>
   
-  <section class="pricing reveal" id="pricing">
-    <h2>Pricing</h2>
-    <div class="price-card animate-pop-in">
-      <h3>Starter Site</h3>
-      <p class="price">$199</p>
-      <ul>
-        <li>Modern design</li>
-        <li>Up to 5 pages</li>
-        <li>1 year hosting</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Order Now</a>
-    </div>
-    <div class="price-card animate-pop-in">
-      <h3>Pro Site</h3>
-      <p class="price">$399</p>
-      <ul>
-        <li>Everything in Starter</li>
-        <li>E-commerce ready</li>
-        <li>Blog & SEO tools</li>
-      </ul>
-      <a href="#contact" class="cta-btn">Order Now</a>
-    </div>
-  </section>
-  
-  <section class="contact reveal" id="contact">
+  <section id="contact" class="contact-section animate__animated animate__fadeInUp">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="cta-btn">Send Message</button>
+    <form class="contact-form" action="mailto:mrprincekofiasante.123@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required/>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required/>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
     </form>
+    <p class="email-info">Or email us directly: <a href="mailto:mrprincekofiasante.123@gmail.com">mrprincekofiasante.123@gmail.com</a></p>
   </section>
   
   <footer>
     <p>© 2025 Hi-tech. All rights reserved.</p>
   </footer>
   
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/68cb2e235db973192bd36153/1j5cqofjv';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
+  <!-- Tawk.to Chat -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/68cb2e235db973192bd36153/1j5cqofjv';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
 </body>
 </html>
